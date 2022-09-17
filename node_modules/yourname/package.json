@@ -1,0 +1,17 @@
+{
+  "name": "yourname",
+  "version": "1.0.0",
+  "description": "Print your name",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hovanvydut",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://home-server.silk-cat.software:9701/repository/npm-hosted/"
+  },
+  "dependencies": {
+    "yourname": "^1.0.0"
+  }
+}
