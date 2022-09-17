@@ -28,6 +28,8 @@ let {yourname} = require('yourname');
 yourname();
 ``
 
+And run: `node main.js`
+
 * Push private repo (config the private registry in package.json)
 npm publish
 
