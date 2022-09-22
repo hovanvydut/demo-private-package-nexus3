@@ -3,15 +3,17 @@
 * Nexus3: http://home-server.silk-cat.software:9701/
 * Private NPM Registry: http://home-server.silk-cat.software:9701/repository/npm-hosted/
 
-* Loggin npm as Common User
-username = commonuser
-password = 123123123
+
+### 1. Login npm as Common User
+
+username = commonuser \
+password = 123123123 \
 Use the above credentials and run the bellow command
 ```
 npm adduser --registry http://home-server.silk-cat.software:9701/repository/npm-hosted/
 ```
 
-* Pull vy's private lib
+### 2. Pull vy's private lib
 Create a new directory
 ```
 mkdir nexus3
@@ -26,10 +28,10 @@ let {yourname} = require('yourname');
 
 // execute function
 yourname();
-``
+```
 
 And run: `node main.js`
 
-* Push private repo (config the private registry in package.json)
+### 3. Push private repo (config the private registry in package.json)
 npm publish
 
