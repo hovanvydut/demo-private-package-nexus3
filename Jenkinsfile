@@ -14,7 +14,14 @@ pipeline{
 
 		stage('Publish') {
 			steps {
-				sh 'docker-compose -p publish_npm_lib up --build'
+				sh 'docker build -t build-npm-package .'
+				sh 'docker container run --rm -v "$(pwd)":/home/build build-npm-package'
+			}
+		}
+
+		state('Clean docker') {
+			steps {
+				sh 'docker system prune --all --force'
 			}
 		}
 	}
