@@ -12,7 +12,7 @@ pipeline{
 			}
 		}
 
-		stag('Publish') {
+		stage('Publish') {
 			steps {
 				sh 'docker build -t build-npm-package .'
 				sh 'docker container run --rm -v "$(pwd)":/home/build build-npm-package'
