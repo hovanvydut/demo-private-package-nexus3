@@ -35,3 +35,10 @@ And run: `node main.js`
 ### 3. Push private repo (config the private registry in package.json)
 npm publish
 
+
+### Jenkins
+
+1. Write Jenkins file in source code
+2. Setup jenkins
+3. Config jenkins to build and publish package to nexus3
+    New item --> pipeline --> 
