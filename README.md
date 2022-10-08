@@ -41,4 +41,5 @@ npm publish
 1. Write Jenkins file in source code
 2. Setup jenkins
 3. Config jenkins to build and publish package to nexus3
-    New item --> pipeline --> 
+    New item --> pipeline --> config git, credential
+4. Config webhook in github

@@ -9,7 +9,7 @@ pipeline{
 		stage('Git clone') {
 
 			steps {
-				git branch: 'main', url: 'https://github.com/hovanvydut/demo-private-package-nexus3'
+				git branch: 'main', url: 'git@github.com:hovanvydut/demo-private-package-nexus3.git'
 			}
 		}
 
