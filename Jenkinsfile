@@ -12,14 +12,14 @@ pipeline{
 			}
 		}
 
-		stage('Publish') {
+		stag('Publish') {
 			steps {
 				sh 'docker build -t build-npm-package .'
 				sh 'docker container run --rm -v "$(pwd)":/home/build build-npm-package'
 			}
 		}
 
-		state('Clean docker') {
+		stage('Clean docker') {
 			steps {
 				sh 'docker system prune --all --force'
 			}
