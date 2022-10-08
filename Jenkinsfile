@@ -14,7 +14,7 @@ pipeline{
 
 		stage('Publish') {
 			steps {
-				sh 'docker compose -p publish_npm_lib up --build'
+				sh 'docker-compose -p publish_npm_lib up --build'
 			}
 		}
 	}
