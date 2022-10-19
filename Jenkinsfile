@@ -21,7 +21,7 @@ pipeline{
 
 		stage('Clean docker') {
 			steps {
-				// sh 'docker system prune --all --force'
+
 			}
 		}
 	}
