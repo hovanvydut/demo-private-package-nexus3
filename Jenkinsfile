@@ -18,11 +18,5 @@ pipeline{
 				sh 'docker container run --rm -v "$(pwd)":/home/build build-npm-package'
 			}
 		}
-
-		stage('Clean docker') {
-			steps {
-
-			}
-		}
 	}
 }
