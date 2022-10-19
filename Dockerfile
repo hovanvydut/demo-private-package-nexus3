@@ -1,4 +1,4 @@
-FROM 18.11.0-alpine3.15
+FROM node:slim
 
 WORKDIR /home/build
 
