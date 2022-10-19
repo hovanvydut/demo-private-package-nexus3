@@ -1,4 +1,4 @@
-FROM node:lts
+FROM 18.11.0-alpine3.15
 
 WORKDIR /home/build
 
