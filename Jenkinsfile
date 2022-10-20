@@ -20,9 +20,9 @@ pipeline{
 		}
 	}
 
-		post {
+	post {
 		always {
             sh 'docker system prune -af'
 		}
-		}
+	}
 }
