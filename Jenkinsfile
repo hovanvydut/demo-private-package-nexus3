@@ -8,7 +8,7 @@ pipeline{
 	stages {
 		stage('Git clone') {
 			steps {
-				git branch: 'main', url: 'https://github.com/hovanvydut/demo-private-package-nexus3.gi'
+				git branch: 'main', url: 'https://github.com/hovanvydut/demo-private-package-nexus3.git'
 			}
 		}
 
